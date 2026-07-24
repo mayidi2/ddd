@@ -25,3 +25,6 @@ jobs:
 
       - name: Build application
         run: mvn -B clean verify
+
+      - name: Build Docker Image
+        run: docker build -t ci-cd .
